@@ -1,5 +1,5 @@
 import mechanicalsoup, os
-from .growicreds import _GrowiCreds
+from growicreds import _GrowiCreds
 from getpass import getpass
 from datetime import date
 

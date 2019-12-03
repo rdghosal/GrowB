@@ -1,6 +1,6 @@
 #!usr/env/bin python3
 import sys, os, argparse
-from .growiscraper import GrowiScraper
+from growiscraper import GrowiScraper 
 
 
 def main(args):
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     
     # Optional args
     parser.add_argument("-p", "--path", nargs=1, help="Path for destination files")
-    parser.add_argument("--to_md", nargs="?", action="store_true", help="Use for .md file output")
+    parser.add_argument("--to_md", action="store_true", help="Use for .md file output")
 
     args = parser.parse_args()
     code = main(args)
